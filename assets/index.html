@@ -13,13 +13,12 @@
 </head>
 
 <body>
-<section class="img_wrap">
-    <div class="right_img0"></div>
-    <div class="left_img1"></div>
-    <div class="right_img1"></div>
-    <div class="left_img2"></div>
-</section>
-
+    <section class="img_wrap">
+        <div class="right_img0"></div>
+        <div class="left_img1"></div>
+        <div class="right_img1"></div>
+        <div class="left_img2"></div>
+    </section>
     <header>
         <section class="title">
             <!-- <p class="title_text"> -->
@@ -31,19 +30,20 @@
             </h1>
             <!-- </p> -->
             <nav>
-                <div class="menu"><a href=".html">ホーム</a></div>
-                <div class="menu"><a href=".html">医師紹介</a></div>
+                <div class="menu"><a href="#news"><button>お知らせ</button></a></div>
+                <div class="menu"><a href="#about"><button>診療内容</button></a></div>
                 <div class="menu"><img src="images/logo.png" alt="ロゴ"></div>
-                <div class="menu"><a href=".html">診療内容</a></div>
-                <div class="menu"><a href=".html">アクセス</a></div>
+                <div class="menu"><a href="#greeting"><button>医師紹介</button></a></div>
+                <div class="menu"><a href="#access"><button>アクセス</button></a></div>
             </nav>
         </section>
+        <div class="race02"></div>
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide" style="
-            background: linear-gradient(360deg, #E0D9F1 28%, rgba(255,255,255,0) 45%) no-repeat 0% 100% / 100% 5%,
+            background: linear-gradient(360deg, #e6dee9 35%, rgba(255,255,255,0) 48%) no-repeat 0% 100% / 100% 5%,
                         url('images/top_img.jpg');
             background-repeat: no-repeat;
             width: 100%;
@@ -51,7 +51,7 @@
             background-position: center center;">
                 </div>
                 <div class="swiper-slide" style="
-            background: linear-gradient(360deg, #E0D9F1 28%, rgba(255,255,255,0) 45%) no-repeat 0% 100% / 100% 5%,
+            background: linear-gradient(360deg, #e6dee9 35%, rgba(255,255,255,0) 48%) no-repeat 0% 100% / 100% 5%,
                         url('images/top_img2.jpg');
             background-repeat: no-repeat;
             width: 100%;
@@ -59,7 +59,7 @@
             background-position: center center;">
                 </div>
                 <div class="swiper-slide" style="
-            background: linear-gradient(360deg, #E0D9F1 28%, rgba(255,255,255,0) 45%) no-repeat 0% 100% / 100% 5%,
+            background: linear-gradient(360deg, #e6dee9 35%, rgba(255,255,255,0) 48%) no-repeat 0% 100% / 100% 5%,
                         url('images/top_img3.jpg');
             background-repeat: no-repeat;
             width: 100%;
@@ -79,7 +79,7 @@
                 </div>
             </a>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <h3>お知らせ</h3>
             <p>休診のお知らせ：９月１２日（木）午後は、厚生労働局の新規指導のため休診となります。</p>
             <p>代診のお知らせ：９月１４日（土）１１時以降は、中山紗由香医師の診療となります。</p>
@@ -100,12 +100,12 @@
                 ＞＞＞
             </p>
         </div>
-        <section class="about_clinic">
+        <section class="about_clinic" id="about">
             <div class="bar"></div>
             <h2>ABOUT&nbsp;&nbsp;CLINIC</h2>
             <div class="about_article">
                 <div class="box-text">
-                    <div class="article">
+                    <div class="article1">
                         <p>
                             むらさき乳腺クリニック五反田は<br>
                             <span class="home_docter">"なんでも相談できる<br>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="illust">
                     </div>
-                    <div class="article">
+                    <div class="article2">
                         <p>
                             クリニックの内装は、<br>
                             患者様がふらっと立ち寄れる感覚で<br>
@@ -204,9 +204,11 @@
                         <h5><span>乳がん検診</span></h5>
                         <div class="inner">
                             品川区検診・自費乳がん検診
-                            <a href=".html"><div class="sinagawa_kensin">
+                            <a href=".html">
+                                <div class="sinagawa_kensin">
                                     詳しくはこちらへ&nbsp;&nbsp;<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                            </div></a>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="naiyo_box">
@@ -233,50 +235,46 @@
                             授乳期トラブルのご相談
                         </div>
                     </div>
-
                 </div>
             </div><!-- 植物の絵ここまで。 -->
-
-        <div class="angle_down2">
-            <p>
-                ＞＞＞
-            </p>
-        </div>
-
+            <div class="angle_down2">
+                <p>
+                    ＞＞＞
+                </p>
+            </div>
             <div class="bar2"></div>
-            <h2 class="greeting_h2">GREETING</h2>
-<div class="greeting">
-        <div class="race_top"></div>
-        <div class="race_bottom"></div>
-        <article class="greeting_box">
-            <div class="profile">
-            </div>
-            <div class="doctor_name">
-                <h5 class="greeting_h5">院長</h5><br>池田&nbsp;紫<span class="murasaki_font">Murasaki&nbsp;IKEDA</span>
-            </div>
-            <div class="greeting_box1">
-                <p>２月１日の開院より１か月が過ぎ、患者様を笑顔でお迎えできる環境が整ってまいりました。当クリニックは「乳腺の診療をとおして女性が納得の行く人生を送るお手伝いをする」という目標を掲げています。</p>
-                <p><p>私は、2010年６月、東京都品川区の昭和大学病院ブレストセンター開設当時より乳がん診療に携わり、「患者さま中心のチーム医療の実践」を目標に昼夜を問わず患者さまと接してまいりました。</p>
-            </div>
-            <div class="greeting_box2">
-                <p>センターには、「乳がんにならないためにはどうしたらいいのだろう」「乳がんの治療後、再発が怖い」「家族が乳がんになったので将来が心配」など、不安な気持ちで外来を訪れる方が多くいらっしゃいます。</p>
-                <p>検診で精密検査になって大学病院を紹介されたものの、敷居が高く足が遠のいてしまっている、というお話も聞きました。しかし、大学病院勤務時代は、手術や入院患者さまの治療が中心となり、外来で個々のお悩みに耳を傾ける十分な時間がなかなか取れませんでした。</p>
-            </div>
-            <div class="greeting_box3">
-                <!-- image -->
-            </div>
-            <div class="greeting_box4">
-                <p>そこで、昭和大学病院も掲げる乳腺外科のチーム医療の一環として、旗の台からアクセスの良い五反田駅近くにクリニックを開院することにいたしました。MRIやCTなどの特別な検査が必要な場合は、昭和大学病院乳腺外科と連携しご紹介いたします。</p>
-                <p>また、乳がんなどの治療の際には、昭和大学病院、およびその他の大学病院やがん専門病院、総合病院と連携し、個々の患者さまにとって納得のいく治療が受けられるようトータルサポートいたします。</p>
-                <p>「なんでも相談できるお胸のホームドクター」として、どうぞご遠慮なくお気軽にご相談ください。</p>
-            </div>
-            <div class="greeting_box5">
-                <!-- image -->
-            </div>
-        </article>
-
-</div><!-- 院長のご挨拶ここまで -->
-
+            <h2 class="greeting_h2" id="greeting">GREETING</h2>
+            <div class="greeting">
+                <div class="race_top"></div>
+                <div class="race_bottom"></div>
+                <article class="greeting_box">
+                    <div class="profile">
+                    </div>
+                    <div class="doctor_name">
+                        <h5 class="greeting_h5">院長</h5><br>池田&nbsp;紫<span class="murasaki_font">Murasaki&nbsp;IKEDA</span>
+                    </div>
+                    <div class="greeting_box1">
+                        <p>２月１日の開院より１か月が過ぎ、患者様を笑顔でお迎えできる環境が整ってまいりました。当クリニックは「乳腺の診療をとおして女性が納得の行く人生を送るお手伝いをする」という目標を掲げています。</p>
+                        <p>
+                            <p>私は、2010年６月、東京都品川区の昭和大学病院ブレストセンター開設当時より乳がん診療に携わり、「患者さま中心のチーム医療の実践」を目標に昼夜を問わず患者さまと接してまいりました。</p>
+                    </div>
+                    <div class="greeting_box2">
+                        <p>センターには、「乳がんにならないためにはどうしたらいいのだろう」「乳がんの治療後、再発が怖い」「家族が乳がんになったので将来が心配」など、不安な気持ちで外来を訪れる方が多くいらっしゃいます。</p>
+                        <p>検診で精密検査になって大学病院を紹介されたものの、敷居が高く足が遠のいてしまっている、というお話も聞きました。しかし、大学病院勤務時代は、手術や入院患者さまの治療が中心となり、外来で個々のお悩みに耳を傾ける十分な時間がなかなか取れませんでした。</p>
+                    </div>
+                    <div class="greeting_box3">
+                        <!-- image -->
+                    </div>
+                    <div class="greeting_box4">
+                        <p>そこで、昭和大学病院も掲げる乳腺外科のチーム医療の一環として、旗の台からアクセスの良い五反田駅近くにクリニックを開院することにいたしました。MRIやCTなどの特別な検査が必要な場合は、昭和大学病院乳腺外科と連携しご紹介いたします。</p>
+                        <p>また、乳がんなどの治療の際には、昭和大学病院、およびその他の大学病院やがん専門病院、総合病院と連携し、個々の患者さまにとって納得のいく治療が受けられるようトータルサポートいたします。</p>
+                        <p>「なんでも相談できるお胸のホームドクター」として、どうぞご遠慮なくお気軽にご相談ください。</p>
+                    </div>
+                    <div class="greeting_box5">
+                        <!-- image -->
+                    </div>
+                </article>
+            </div><!-- 院長のご挨拶ここまで -->
         </section>
     </main>
     <footer>
@@ -294,7 +292,24 @@ var mySwiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-})
+});
+</script>
+<script>
+$(function() {
+    // #で始まるアンカーをクリックした場合に処理
+    $('a[href^="#"]').click(function() {
+        // スクロールの速度
+        var speed = 1000; // ミリ秒
+        // 移動先を取得
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        var position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+    });
+});
 </script>
 
 </html>
