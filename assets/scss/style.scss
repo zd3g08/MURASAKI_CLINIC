@@ -1,6 +1,8 @@
 @charset "UTF-8";
-
-
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush|Dancing+Script|Great+Vibes|Pinyon+Script|Tangerine&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One|Raleway&display=swap);
  body {
     background-color: #fff;
     max-width: 100vw;
@@ -11,7 +13,8 @@
 
 a {
 text-decoration: none;
-color: #1f1f1f;
+transition : all 0.5s ease 0s;
+color: #3f3f3f;
 }
 a:hover{
     color: #ff3395;
@@ -26,6 +29,7 @@ header {
     height: 200px;
     margin: 0 auto;
     padding-top: 50px;
+    margin-bottom: 10px;
     background: url(../images/title_bg.jpg) top right no-repeat;
     background-size: 20%;
     background-color: #fff;
@@ -38,20 +42,32 @@ header {
         margin-top: -10px;
     }
 }
+
 h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 3rem;
 }
+
 h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #77609b;
     margin: 0;
+    font-family: 'Great Vibes', cursive;
+    // font-family: 'Tangerine', cursive;
+    // font-family: 'Dancing Script', cursive;
+    // font-family: 'Pinyon Script', cursive;
+    // font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+    letter-spacing: .2rem;
 }
 
 nav {
     display: flex;
     width: 1024px;
-    margin: 30px auto 0 auto;
+    margin: 35px auto 0 auto;
     font-size: 1rem;
     text-align: center;
     div.menu {
@@ -82,24 +98,24 @@ nav {
 
 .top_img {
     position: relative;
-    width: 1350px;
-    height: 950px;
+    width: 1024px;
     margin: 0 auto;
     text-align: center;
-
     .yoyaku {
         position: absolute;
-        top: -123px;
-        right: 237px;
-        width: 200px;
-        height: 60px;
+        top: -140px;
+        right: 123px;
+        width: 130px;
+        height: 55px;
         border-radius: 5px;
         background-color: rgba(#ff3395,.8);
         border: 1px solid rgba(#fff,.4);
         font-size: .9rem;
         line-height: 1.75rem;
         color: #fff;
-        padding: 10px;
+text-align: justify;
+text-justify: distribute-all-lines;
+        padding: 15px;
         z-index: 50;
     }
 }
@@ -107,7 +123,7 @@ nav {
 section.news {
     position: absolute;
     top: 700px;
-    left: 0;
+    left: -100px;
     right: 0;
     width: 1024px;
     height: 350px;
@@ -154,9 +170,9 @@ h3 {
 
 section.header_end {
     position: relative;
-    top: -1000px;
+    top: 0px;
     width: 100vw;
-    height: 420px;
+    height: 360px;
     margin: 0 auto;
     background: linear-gradient(to top, #e0d9f1 0%, #fdcbf1 1%, #e6dee9 100%);
     text-align: center;
@@ -174,14 +190,226 @@ section.header_end {
 
 // mainここから
 
+main {
+    margin: 0;
+    padding: 0;
+}
+
 div.angle_down {
-    width: 20px;
+    width: 15px;
     margin: 0 auto;
     p {
-        margin: 50px 0;
+        margin: 50px 0 0 0;
         padding: 0;
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       line-height: 0rem;
+      font-family: 'Sawarabi Gothic', sans-serif;
+      font-weight: 400;
+      font-size: .9rem;
+      color: #3f3f3f;
     }
+}
+
+.about_clinic {
+    width: 100vw;
+    margin: 0 auto;
+}
+.about_article {
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+    height: 1000px;
+    background:url(../images/grass03.png) top center no-repeat;
+    background-size: 95%;
+    text-align: center;
+    z-index: 0;
+}
+.about_article::after {
+    position: absolute;
+     width: 100%;
+    height: 1000px;
+    content: "";
+    display: block;
+    background-color: rgba(#fff,.4);
+    z-index: 0;
+}
+h2 {
+    position: absolute;
+    width: 100vw;
+    margin: 200px 0 0 0;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    // font-family: 'Josefin Sans', sans-serif;
+    // font-family: 'Poiret One', cursive;
+    color: #131313;
+    text-align: center;
+    z-index: 50;
+}
+.bar {
+    position: relative;
+    width: 100vw;
+    height: 50px;
+    top: 245px;
+    background-color: rgba(#fff,.5);
+    z-index: 10;
+
+}
+.box-text {
+    width: 1024px;
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    top: 345px;
+    left: 170px;
+    right: 0;
+    color: #131313;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 2rem;
+    padding: 0;
+    z-index: 50;
+}
+div.article {
+    width: 250px;
+}
+div.illust {
+    width: 170px;
+    background: url(../images/illust.png) center center no-repeat;
+    background-size: 100%;
+}
+span.home_docter {
+    display: block;
+    color: #bc72e8;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+.sinsatu_time {
+    position: relative;
+    width: 370px;
+    height: 875px;
+    top: 630px;
+    left: 120px;
+    background-color: rgba(#fff,.8);
+    border: 1px solid rgba(#111,.2);
+    z-index: 50;
+    p {
+        font-size: .8rem;
+    }
+}
+
+h5 {
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    margin: 30px 0 20px 0;
+    font-weight: 400;
+}
+
+//診察時間table
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 70%;
+    margin: 0 auto;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+  // cursor: pointer;
+}
+
+table tr:hover{
+  background-color: rgba(#d4f0fd,.3);
+  transition : all 0.5s ease 0s;
+}
+
+table th,table td{
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+span.sinsatubi {
+    color: #ff3395;
+    font-size: 1.2rem;
+}
+span.sinsatubi2 {
+    color: #ffbc00;
+    font-size: 1.2rem;
+}
+td.youbi {
+    font-weight: bold;
+}
+
+th.time {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+
+span.tel {
+    display: block;
+    color: #bc72e8;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+.sinsatubi_text {
+    margin: 40px 0 40px 0;
+}
+
+div.sinsatu_naiyo {
+    position: relative;
+    width: 370px;
+    height: 875px;
+    top: -247px;
+    left: 520px;
+    background-color: rgba(#fff,.8);
+    border: 1px solid rgba(#111,.2);
+    z-index: 50;
+    .naiyo_box{
+      width: 270px;
+      border-radius: 10px;
+      position: relative;
+      margin: 40px auto 0 auto;
+      padding: 25px 10px 7px 10px;
+      background-color: rgba(#e0d9f1,.25);
+      font-size: .7rem;
+    }
+    .naiyo_box h5{
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      top: -50px;
+      font-size: .8rem;
+    }
+    .naiyo_box span{
+      display: block;
+      padding: 10px 30px 10px 30px;
+      background: rgba(#c3b9fa,1);
+      color: #FFF;
+      display: inline-block;
+      border-radius: 25px;
+    }
+    .naiyo_box .inner{
+      padding: 10px;
+    }
+    .sinagawa_kensin {
+        width: 140px;
+        height: 20px;
+        margin: 4px auto;
+        border-radius: 2px;
+        background-color: rgba(#ff3395,.8);
+        border: 1px solid rgba(#fff,.4);
+        font-size: .9rem;
+        color: #fff;
+text-align: justify;
+text-justify: distribute-all-lines;
+        padding: 10px 20px 6px 20px;
+    }
+
 }
