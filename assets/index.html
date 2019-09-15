@@ -8,10 +8,111 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
 </head>
+
 <body>
-<h1>テスト</h1>
+    <header>
+        <section class="title">
+            <!-- <p class="title_text"> -->
+            <h4>
+                <span>Murasaki Breast Clinic</span>
+            </h4>
+            <h1>
+                <span>むらさき乳腺クリニック五反田</span>
+            </h1>
+            <!-- </p> -->
+            <nav>
+                <div class="menu"><a href=".html">ホーム</a></div>
+                <div class="menu"><a href=".html">医師紹介</a></div>
+                <div class="menu"><img src="images/logo.png" alt="ロゴ"></div>
+                <div class="menu"><a href=".html">診療内容</a></div>
+                <div class="menu"><a href=".html">アクセス</a></div>
+            </nav>
+        </section>
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" style="
+            background: linear-gradient(360deg, #E0D9F1 28%, rgba(255,255,255,0) 45%) no-repeat 0% 100% / 100% 5%,
+                        url('images/top_img.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            background-position: center center;">
+        </div>
+        <div class="swiper-slide" style="
+            background: linear-gradient(360deg, #E0D9F1 28%, rgba(255,255,255,0) 45%) no-repeat 0% 100% / 100% 5%,
+                        url('images/top_img2.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            background-position: center center;">
+        </div>
+        <div class="swiper-slide" style="
+            background: linear-gradient(360deg, #E0D9F1 28%, rgba(255,255,255,0) 45%) no-repeat 0% 100% / 100% 5%,
+                        url('images/top_img3.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            background-position: center center;">
+        </div>
+<!--     <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+ --></div>
+</div>
+        <section class="top_img">
+            <a href=".html">
+                <div class="yoyaku">
+                    インターネット<br>予約はコチラから
+                </div>
+            </a>
+        </section>
+        <section class="news">
+            <h3>お知らせ</h3>
+            <p>休診のお知らせ：９月１２日（木）午後は、厚生労働局の新規指導のため休診となります。</p>
+            <p>代診のお知らせ：９月１４日（土）１１時以降は、中山紗由香医師の診療となります。</p>
+            <p>お知らせ：品川区乳がん検診が始まりました。詳しくはこちら</p>
+            <p>公式インスタグラム、始めました。日々のクリニックの様子、特徴などを発信してまいります。</p>
+            <p>公式Facebookページはこちらになります。フォローをご自由にどうぞ。</p>
+            <img class="lavender" src="images/lavender02.png" alt="ラベンダーのイラスト">
+            <img class="pinkribon" src="images/ribon.png" alt="ピンクのリボン">
+        </section>
+    </header>
+    <section class="header_end">
+        <div class="race"></div>
+    </section>
+    <!-- メインコンテンツここから -->
+    <main>
+        <div class="angle_down">
+            <p>
+                >>>
+                <!--     <i class="fa fa-angle-down" aria-hidden="true"></i>
+    <p><i class="fa fa-angle-down" aria-hidden="true"></i>
+    <p><i class="fa fa-angle-down" aria-hidden="true"></i>
+ -->
+            </p>
+        </div>
+    </main>
+    <footer>
+    </footer>
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    autoplay: true,
+    delay: 3000,
+    speed: 4000,
+    disableOnInteraction: false,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+})
+</script>
+
 </html>
