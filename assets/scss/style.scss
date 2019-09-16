@@ -84,6 +84,26 @@ div.left_img2 {
     -moz-transform: rotate(90deg); /* firefox */
     z-index: 0;
 }
+div.right_img2 {
+    position: absolute;
+    width: 1024px;
+    height: 338px;
+    top: 4500px;
+    right: -345px;
+    background: url(../images/grass02.png) no-repeat;
+    -webkit-transform: rotate(90deg); /* chrome、safari */
+    -moz-transform: rotate(9deg); /* firefox */
+    z-index: 10;
+}
+div.left_img3 {
+    position: absolute;
+    width: 171px;
+    height: 415px;
+    top: 4800px;
+    left: -350px;
+    background: url(../images/lavener_bg2.jpg) top center no-repeat;
+    z-index: 100;
+}
 
 
 //navmenuのホバー効果
@@ -314,6 +334,8 @@ main {
     padding: 0;
 }
 
+//>>>ここから
+
 div.angle_down {
     width: 15px;
     margin: 0 auto;
@@ -348,6 +370,26 @@ div.angle_down2 {
     }
 }
 
+div.angle_down3 {
+    position: relative;
+    top: 750px;
+    width: 15px;
+    margin: 0 auto;
+    p {
+        margin: 50px 0 0 0;
+        padding: 0;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      line-height: 0rem;
+      font-family: 'Sawarabi Gothic', sans-serif;
+      font-weight: 400;
+      font-size: .9rem;
+      color: #3f3f3f;
+    }
+}
+
+//>>>ここまで
+
 .about_clinic {
     width: 100vw;
     margin: 0 auto;
@@ -362,15 +404,15 @@ div.angle_down2 {
     text-align: center;
     z-index: 0;
 }
-.about_article::after {
-    position: absolute;
-     width: 100%;
-    height: 1000px;
-    content: "";
-    display: block;
-    background-color: rgba(#fff,.4);
-    z-index: 0;
-}
+// .about_article::after {
+//     position: absolute;
+//      width: 100%;
+//     height: 1000px;
+//     content: "";
+//     display: block;
+//     background-color: rgba(#fff,.4);
+//     z-index: 0;
+// }
 h2 {
     position: absolute;
     width: 100vw;
@@ -574,14 +616,14 @@ div.sinsatu_naiyo {
     position: relative;
     width: 100vw;
     height: 50px;
-    top: 570px;
+    top: 640px;
     background-color: rgba(#fff,.7);
     z-index: 10;
 }
 h2.greeting_h2 {
     position: absolute;
     width: 100vw;
-    margin: 520px 0 0 0;
+    margin: 600px 0 0 -15px;
     font-size: 2rem;
 font-family: 'Cormorant Infant', serif;
     // font-family: 'Raleway', sans-serif;
@@ -594,9 +636,9 @@ font-family: 'Cormorant Infant', serif;
 }
 .greeting {
     position: relative;
-    top: 600px;
+    top: 700px;
     width: 100vw;
-    height: 1230px;
+    height: 1300px;
     background-color: rgba(#e0d9f1,.5);
     position: relative;
     margin: 0 auto;
@@ -657,8 +699,8 @@ font-family: 'Cormorant Infant', serif;
     background: url(../images/greeting_bg.png) top center no-repeat;
     background-size: 70%;
     padding: 40px 100px 40px 100px;
-    font-size: .7rem;
-    line-height: 1.65rem;
+    font-size: .75rem;
+    line-height: 1.6rem;
 }
 .profile {
     position: relative;
@@ -710,3 +752,58 @@ font-family: 'Cormorant Infant', serif;
     background: url(../images/doctor.jpg) left top no-repeat;
     background-size: cover;
 }
+
+//snsここから
+.sns_section {
+    width: 100vw;
+    margin: 0 auto;
+}
+.bar3 {
+    position: relative;
+    width: 100vw;
+    height: 50px;
+    top: 820px;
+    background-color: rgba(#fff,.7);
+    z-index: 10;
+}
+h2.sns_h2 {
+    position: absolute;
+    width: 100vw;
+    margin: 775px 0 0 -15px;
+    font-size: 2rem;
+    font-family: 'Cormorant Infant', serif;
+    // font-family: 'Raleway', sans-serif;
+    // font-family: 'Josefin Sans', sans-serif;
+    // font-family: 'Poiret One', cursive;
+    color: #131313;
+    text-align: center;
+    letter-spacing: .1rem;
+    z-index: 50;
+}
+div.sns_contents_center {
+    position: relative;
+    width: 1350px;
+    height: 700px;
+    margin: 0 auto;
+    top: 750px;
+    left: 0px;
+    right: 0;
+    display: flex;
+    text-align: center;
+}
+article.sns_contents {//Instagram
+    width: 500px;
+    background: url(../images/grass04.png) top center no-repeat;
+    padding: 80px 0 0 100px;
+    margin-left: 120px;
+    background-size: contain;
+}
+article.sns_contents2 {//facebook
+    width: 650px;
+    background: url(../images/grass04.png) top center no-repeat;
+    padding: 80px 0 0 0px;
+    margin-right: 150px;
+    background-size: contain;
+}
+
+//snsここまで
