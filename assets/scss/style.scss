@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One|Raleway&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes|Homemade+Apple|Nothing+You+Could+Do|Satisfy|Yesteryear&display=swap);
 
 body {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAOklEQVQoU2NkIAIwElJz59I+Y7yKQApU9JzO4lQEUwCyCasiZAVYFaErwFCETQGKIlwK4IrwKQApAgC6lB6peMgdwQAAAABJRU5ErkJggg==);
@@ -25,11 +26,35 @@ section.img_wrap {
     width: 100vw;
 }
 
+/* ----- グラデーションオーバーレイ ----- */
+.wrap{
+ margin-top: -300px;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ height: 100vh;
+ background: linear-gradient(-45deg, rgba(4, 114, 124, 0.01), rgba(17, 66, 99, 0.05));
+ z-index: -99;
+}
+ #player {//videoを制御
+    position: absolute;
+    top:0;
+    // width: 100vw;
+    // height: 100vh;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+    background: #FFF;
+    z-index: -99;
+}
+
 div.race02 {
     position: absolute;
     width: 100vw;
     height: 100px;
-    top: 279px;
+    top: 0;
     left: 0;
     right: 0;
     background: url(../images/race02.png) center bottom repeat-x;
@@ -43,12 +68,13 @@ div.right_img0 {
     position: absolute;
     width: 1024px;
     height: 338px;
-    top: 1300px;
+    top: 1150px;
     right: -345px;
     background: url(../images/grass02.png) no-repeat;
     -webkit-transform: rotate(90deg); /* chrome、safari */
     -moz-transform: rotate(9deg); /* firefox */
-    z-index: 1;
+    z-index: 60;
+    opacity: .7;
 }
 
 div.left_img1 {
@@ -60,6 +86,7 @@ div.left_img1 {
     background: url(../images/grass.png) no-repeat;
     -webkit-transform: rotate(90deg); /* chrome、safari */
     -moz-transform: rotate(90deg); /* firefox */
+    opacity: .7;
     z-index: 0;
 }
 div.right_img1 {
@@ -71,6 +98,7 @@ div.right_img1 {
     background: url(../images/grass02.png) no-repeat;
     -webkit-transform: rotate(90deg); /* chrome、safari */
     -moz-transform: rotate(9deg); /* firefox */
+    opacity: .7;
     z-index: 0;
 }
 div.left_img2 {
@@ -82,6 +110,7 @@ div.left_img2 {
     background: url(../images/grass.png) no-repeat;
     -webkit-transform: rotate(90deg); /* chrome、safari */
     -moz-transform: rotate(90deg); /* firefox */
+    opacity: .7;
     z-index: 0;
 }
 div.right_img2 {
@@ -93,6 +122,7 @@ div.right_img2 {
     background: url(../images/grass02.png) no-repeat;
     -webkit-transform: rotate(90deg); /* chrome、safari */
     -moz-transform: rotate(9deg); /* firefox */
+    opacity: .8;
     z-index: 10;
 }
 div.left_img3 {
@@ -108,14 +138,14 @@ div.left_img3 {
 
 //navmenuのホバー効果
 button{
-  background: rgba(#c3b9fa, .6);
+  background: rgba(#c3b9fa, .2);
   color:#131313;
   border:none;
   position:relative;
-  width: 200px;
-  height:45px;
+  width: 160px;
+  height: 40px;
   font-size:1em;
-  padding:0 2em;
+  padding: 0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
@@ -124,7 +154,7 @@ button{
   letter-spacing: .2rem;
 }
 button:hover{
-  background:#fff;
+  background:rgba(#e0d9f1,.1);
   color:#ff3395;
   transition:800ms ease all;
 }
@@ -155,20 +185,23 @@ header {
     margin: 0;
 }
 section.title {
-    width: 100vw;
-    height: 250px;
-    margin: 0 auto;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: -300px auto 0 auto;
     padding-top: 0px;
     margin-bottom: 20px;
-    background: url(../images/title_bg.jpg) top right no-repeat,
-                url(../images/title_bg2.jpg) top left no-repeat;
-    transform: 0 90deg;
-    background-size: 15%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    // background: url(../images/title_bg.jpg) top right no-repeat,
+    //             url(../images/title_bg2.jpg) top left no-repeat;
+    // transform: 0 90deg;
+    // background-size: 15%;
     background-color: #fff;
     text-align: center;
-    z-index: 1;
+    z-index: 10;
     p.title_text {
-    padding: 50px 0 0 0;
+    padding: 320px 0 0 0;
     }
     img {
         width: 50px;
@@ -199,14 +232,13 @@ h4 {
 
 nav {
     display: flex;
-    width: 1024px;
-    margin: 45px auto 0 auto;
-    font-size: 1rem;
+    width: 100vw;
+    margin: 0px auto 0 auto;
+    font-size: .9rem;
     text-align: center;
     div.menu {
-    width: 200px;
-    height: 60px;
-    background-color: rgba(#fff,.4);
+    width: 160px;
+    height: 50px;
     line-height: 4rem;
     letter-spacing: .5rem;
     }
@@ -216,7 +248,7 @@ nav {
 .swiper-container {
     position: relative;
     width: 100vw;
-    height: 570px;
+    height: 1000px;
     margin: 0 auto;
     // width: 100vw;
     // height: 950px;
@@ -236,9 +268,9 @@ nav {
     text-align: center;
     .yoyaku {
         position: absolute;
-        top: -140px;
+        top: -270px;
         right: 122px;
-        width: 250px;
+        width: 215px;
         height: 30px;
         border-radius: 5px;
         background-color: rgba(#ff3395,.9);
@@ -254,28 +286,28 @@ nav {
     }
     .yoyaku:hover {
             background-color: rgba(#bc72e8,.9);
-            top: -135px;
-              transition : all 0.5s ease-in-out 0s;
+            top: -265px;
+              transition : all 0.3s ease-in-out 0s;
     }
 }
 
 section.news {
     position: absolute;
-    top: 700px;
-    left: -100px;
+    top: 300px;
+    left: -80px;
     right: 0;
     width: 1024px;
     height: 350px;
     margin: 0 auto;
     background: url(../images/news_bg2.png) top center no-repeat;
     background-size: 90%;
-    padding: 150px 0 0 0;
-    z-index: 10;
+    padding: 120px 0 0 0;
+    z-index: 40;
         p {
             width: 55%;
             margin-left: 320px;
             padding-left: 20px;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
             font-size: .8rem;
             background: url(../images/hr.png) bottom center no-repeat;
         }
@@ -287,11 +319,11 @@ section.news {
         }
         img.pinkribon {
               position: absolute;
-              width: 100px;
-              top: 80px;
-              right: 40px;
-                -webkit-transform: rotate(25deg); /* chrome、safari */
-                -moz-transform: rotate(25deg); /* firefox */
+              width: 120px;
+              top: 70px;
+              right: 20px;
+                -webkit-transform: rotate(35deg); /* chrome、safari */
+                -moz-transform: rotate(35deg); /* firefox */
         }
 }
 
@@ -309,20 +341,21 @@ h3 {
 
 section.header_end {
     position: relative;
-    top: 0px;
+    top: -150px;
     width: 100vw;
-    height: 380px;
+    height: 200px;
     margin: 0 auto;
-    background: linear-gradient(to top,rgba(#e0d9f1,.4) 0%, #e0d9f1 10%, #e6dee9 100%);
+    background: #fff;
     text-align: center;
+    z-index: 55;
     div.race {
         position: absolute;
         width: 100vw;
         height: 100px;
-        bottom: 0;
+        top: -100px;
         left: 0;
         right: 0;
-        background: url(../images/race.png) center bottom repeat-x;
+        background: url(../images/race02.png) center bottom repeat-x;
         background-size: 10%;
     }
 }
@@ -337,8 +370,13 @@ main {
 //>>>ここから
 
 div.angle_down {
+position: relative;
+    top: -350px;
+    left: 0;
+    right: 0;
     width: 15px;
     margin: 0 auto;
+z-index: 60;
     p {
         margin: 50px 0 0 0;
         padding: 0;
@@ -354,9 +392,11 @@ div.angle_down {
 
 div.angle_down2 {
     position: relative;
-    top: 550px;
-    width: 15px;
+    top: 150px;
+    left: 10px;
+    width: 10px;
     margin: 0 auto;
+    z-index: 60;
     p {
         margin: 50px 0 0 0;
         padding: 0;
@@ -372,9 +412,12 @@ div.angle_down2 {
 
 div.angle_down3 {
     position: relative;
-    top: 750px;
+    top: 300px;
+    left: 0;
+    right: 0;
     width: 15px;
     margin: 0 auto;
+    z-index: 60;
     p {
         margin: 50px 0 0 0;
         padding: 0;
@@ -391,8 +434,13 @@ div.angle_down3 {
 //>>>ここまで
 
 .about_clinic {
+    position: relative;
+    top: -380px;
+    left: 0;
+    right: 0;
     width: 100vw;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
+    z-index: 60;
 }
 .about_article {
     position: relative;
@@ -616,14 +664,14 @@ div.sinsatu_naiyo {
     position: relative;
     width: 100vw;
     height: 50px;
-    top: 640px;
+    top: 200px;
     background-color: rgba(#fff,.7);
-    z-index: 10;
+    z-index: 60;
 }
 h2.greeting_h2 {
     position: absolute;
     width: 100vw;
-    margin: 600px 0 0 -15px;
+    margin: 150px 0 0 -15px;
     font-size: 2rem;
 font-family: 'Cormorant Infant', serif;
     // font-family: 'Raleway', sans-serif;
@@ -632,11 +680,11 @@ font-family: 'Cormorant Infant', serif;
     color: #131313;
     text-align: center;
     letter-spacing: .1rem;
-    z-index: 50;
+    z-index: 65;
 }
 .greeting {
     position: relative;
-    top: 700px;
+    top: 250px;
     width: 100vw;
     height: 1300px;
     background-color: rgba(#e0d9f1,.5);
@@ -670,7 +718,7 @@ font-family: 'Cormorant Infant', serif;
         width: 300px;
         height: 90px;
         top: 50px;
-        right: 260px;
+        right: 80px;
         font-size: 2rem;
         line-height: 1.2rem;
         padding-bottom: 15px;
@@ -689,41 +737,43 @@ font-family: 'Cormorant Infant', serif;
 
 .greeting_box {
     position: relative;
-    width: 1024px;
-    height: 1600px;
+    width: 800px;
+    height: 1070px;
     margin: 0 auto;
     top: 70px;
     left: -10px;
     text-align: justify;
     text-justify: distribute-all-lines;
-    background: url(../images/greeting_bg.png) top center no-repeat;
-    background-size: 70%;
-    padding: 40px 100px 40px 100px;
-    font-size: .75rem;
+    // background: url(../images/greeting_bg.png) top center no-repeat;
+    // background-size: 70%;
+    background: rgba(#fff,.7);
+    border-top-left-radius: 15%;
+    padding: 40px 0px 40px 0px;
+    font-size: .7rem;
     line-height: 1.6rem;
 }
 .profile {
     position: relative;
     width: 840px;
     height: 840px;
-    top: -140px;
-    left: 30px;
+    top: -70px;
+    left: -30px;
     background: url(../images/prof_img.png) top left no-repeat;
-    background-size: 60%;
+    background-size: 50%;
 }
 .greeting_box1 {
     position: absolute;
     width: 300px;
-    height: 400px;
+    height: 300px;
     top: 170px;
-    right: 260px;
+    right: 80px;
 }
 .greeting_box2 {
     position: absolute;
     width: 300px;
-    height: 400px;
+    height: 300px;
     top: 415px;
-    left: 280px;
+    left: 80px;
 
 }
 .greeting_box3 {
@@ -731,7 +781,7 @@ font-family: 'Cormorant Infant', serif;
     width: 300px;
     height: 240px;
     top: 430px;
-    right: 260px;
+    right: 80px;
     background: url(../images/doctor2.jpg) left top no-repeat;
     background-size: cover;
 }
@@ -740,7 +790,7 @@ font-family: 'Cormorant Infant', serif;
     width: 300px;
     height: 340px;
     top: 705px;
-    right: 260px;
+    right: 80px;
 
 }
 .greeting_box5 {
@@ -748,15 +798,27 @@ font-family: 'Cormorant Infant', serif;
     width: 300px;
     height: 290px;
     top: 725px;
-    left: 280px;
+    left: 80px;
     background: url(../images/doctor.jpg) left top no-repeat;
     background-size: cover;
+}
+.doctor_sign {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-family: 'Homemade Apple', cursive;
+    color: rgba(#bc72e8,.8);
+    text-align: right;
 }
 
 //snsここから
 .sns_section {
+    position: relative;
+    top: -450px;
+    left: 0;
+    right: 0;
     width: 100vw;
     margin: 0 auto;
+    z-index: 65;
 }
 .bar3 {
     position: relative;
@@ -778,33 +840,48 @@ h2.sns_h2 {
     color: #131313;
     text-align: center;
     letter-spacing: .1rem;
-    z-index: 50;
+    z-index: 65;
+}
+.followme {
+    position: absolute;
+    width: 100vw;
+    margin: 855px 0 0 -15px;
+    font-size: 1.5rem;
+// font-family: 'Satisfy', cursive;
+// font-family: 'Great Vibes', cursive;
+font-family: 'Homemade Apple', cursive;
+// font-family: 'Nothing You Could Do', cursive;
+// font-family: 'Yesteryear', cursive;
+        -webkit-transform: rotate(-5deg); /* chrome、safari */
+        -moz-transform: rotate(-5deg); /* firefox */
+    color: rgba(#bc72e8,.8);
+    text-align: center;
+    z-index: 65;
 }
 div.sns_contents_center {
     position: relative;
-    width: 1350px;
-    height: 700px;
+    width: 1024px;
+    height: 1000px;
     margin: 0 auto;
-    top: 750px;
+    top: 850px;
     left: 0px;
     right: 0;
     display: flex;
     text-align: center;
 }
 article.sns_contents {//Instagram
-    width: 500px;
+    width: 1024px;
     background: url(../images/grass04.png) top center no-repeat;
-    padding: 80px 0 0 100px;
-    margin-left: 120px;
-    background-size: contain;
+    padding: 155px 0 0 300px;
+    background-size: 70%;
 }
-article.sns_contents2 {//facebook
-    width: 650px;
-    background: url(../images/grass04.png) top center no-repeat;
-    padding: 80px 0 0 0px;
-    margin-right: 150px;
-    background-size: contain;
-}
+// article.sns_contents2 {//facebook
+//     width: 650px;
+//     background: url(../images/grass04.png) top center no-repeat;
+//     padding: 80px 0 0 0px;
+//     margin-right: 150px;
+//     background-size: contain;
+// }
 
 //snsここまで
 //footerここから
@@ -818,6 +895,9 @@ footer {
     height: 400px;
     background: url(../images/footer_bg.jpg) center top repeat-x;
     background-size: contain;
+    -webkit-box-shadow:3px 3px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow:3px 3px 10px rgba(0,0,0,0.4);
+    box-shadow:3px 3px 10px rgba(0,0,0,0.4);
 }
 
 section.footer_contens {
@@ -892,13 +972,17 @@ section.footer_contens {
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 100px;
-    background-color: #6b8393;
-    color: rgba(#fff,.8);
-    font-size: .9rem;
-    letter-spacing: .1rem;
+    height: 60px;
+    background: #6b8393;
+    color: rgba(#fff,.9);
+    font-size: .8rem;
+    // letter-spacing: .1rem;
     text-align: center;
-    line-height: 6rem;
+    line-height: 4rem;
+    overflow: hidden;
+    -webkit-box-shadow:5px 3px 7px rgba(0,0,0,0.7);
+    -moz-box-shadow:5px 3px 7px rgba(0,0,0,0.7);
+    box-shadow:5px 3px 7px rgba(0,0,0,0.7);
 }
 //footerここまで
 
@@ -914,7 +998,7 @@ section.footer_contens {
     display: block; /*配置の調整*/
     text-decoration: none; /*文字の下線を消す*/
     color: #fff; /*文字の色*/
-    background: #ff3395; /*ボタンの背景色*/
+    background: rgba(#ff3395,.8); /*ボタンの背景色*/
     text-align: center; /*文字を中央に配置*/
     border-radius: 50%; /*ボタンの角を少し丸くする*/
     outline: none; /*クリックしたときの黒い枠を消す*/
