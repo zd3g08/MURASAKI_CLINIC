@@ -131,7 +131,7 @@ div.left_img3 {
     position: absolute;
     width: 1700px;
     height: 500px;
-    top: 5585px;
+    top: 6235px;
     left: -770px;
     background: url(../images/lavener_bg2.jpg) top center no-repeat;
     z-index: 0;
@@ -787,7 +787,7 @@ font-family: 'Cormorant Infant', serif;
     text-justify: distribute-all-lines;
     // background: url(../images/greeting_bg.png) top center no-repeat;
     // background-size: 70%;
-    background: rgba(#fff,.7);
+    background: rgba(#fff,.4);
     box-shadow: 0px 0px 2px 1px rgba(#fff, .7);
     -webkit-box-shadow:3px 3px 10px rgba(0,0,0,0.03);
     -moz-box-shadow:3px 3px 10px rgba(0,0,0,0.03);
@@ -967,28 +967,46 @@ h2.access_h2 {
 
 div.access_contents_center {
     position: relative;
-    width: 1024px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     margin: 0 auto;
     top: 850px;
-    left: 0px;
+    left: -10px;
     right: 0;
     display: flex;
     text-align: center;
 }
 article.access_contents {//Instagram
-    width: 1024px;
+    width: 800px;
     // background: url(../images/grass04.png) top center no-repeat;
     // background-size: 70%;
-    padding: 155px 0 0 300px;
-    background-color: rgba(red,.2);
+    // background-color: rgba(red,.2);
+    background: rgba(#fff,.7);
+    box-shadow: 0px 0px 2px 1px rgba(#fff, .7);
+    -webkit-box-shadow:3px 3px 10px rgba(0,0,0,0.03);
+    -moz-box-shadow:3px 3px 10px rgba(0,0,0,0.03);
+    box-shadow:3px 3px 10px rgba(0,0,0,0.03);
+    p {
+        width: 380px;
+        margin: 10px auto 10px auto;
+        text-align: justify;
+        text-justify: distribute-all-lines;
+        font-size: .8rem;
+        line-height: 1.75rem;
+    }
+    p.caption {
+        width: 300px;
+        margin: 0px auto;
+        padding: 20px;
+        background-color: rgba(#e0d9f1,.22);
+    }
 }
 //accessここまで
 
 //footerここから
 footer {
     position: absolute;
-    top: 6000px;
+    top: 6650px;
     bottom: 0;
     left: 0;
     right: 0;
