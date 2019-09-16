@@ -29,7 +29,7 @@ div.race02 {
     position: absolute;
     width: 100vw;
     height: 100px;
-    top: 259px;
+    top: 279px;
     left: 0;
     right: 0;
     background: url(../images/race02.png) center bottom repeat-x;
@@ -154,12 +154,12 @@ header {
     width: 100vw;
     margin: 0;
 }
-.title {
+section.title {
     width: 100vw;
-    height: 200px;
+    height: 250px;
     margin: 0 auto;
-    padding-top: 50px;
-    margin-bottom: 10px;
+    padding-top: 0px;
+    margin-bottom: 20px;
     background: url(../images/title_bg.jpg) top right no-repeat,
                 url(../images/title_bg2.jpg) top left no-repeat;
     transform: 0 90deg;
@@ -200,7 +200,7 @@ h4 {
 nav {
     display: flex;
     width: 1024px;
-    margin: 35px auto 0 auto;
+    margin: 45px auto 0 auto;
     font-size: 1rem;
     text-align: center;
     div.menu {
@@ -901,3 +901,51 @@ section.footer_contens {
     line-height: 6rem;
 }
 //footerここまで
+
+//topに戻るボタンここから
+/* パソコン・スマホ共通のCSS */
+#PageTopBtn {
+    position: fixed; /*ボタンの配置場所を固定*/
+    bottom: 10px; /*下からのボタンの配置場所を指定*/
+    right: 25px; /*右からのボタンの配置場所を指定*/
+    z-index: 200;
+}
+#PageTopBtn a {
+    display: block; /*配置の調整*/
+    text-decoration: none; /*文字の下線を消す*/
+    color: #fff; /*文字の色*/
+    background: #ff3395; /*ボタンの背景色*/
+    text-align: center; /*文字を中央に配置*/
+    border-radius: 50%; /*ボタンの角を少し丸くする*/
+    outline: none; /*クリックしたときの黒い枠を消す*/
+}
+#PageTopBtn a:hover {
+    text-decoration: none;
+    background: rgba(#bc72e8,.9); /*マウスオーバー時の背景色*/
+}
+
+/* パソコンで表示する場合のCSS */
+@media (min-width: 768px) {
+#PageTopBtn {
+    font-size: .8rem; /*文字のサイズ*/
+    width: 100px; /*ボタンの幅*/
+    height: 100px; /*ボタンの高さ*/
+}
+#PageTopBtn a {
+    border: 2px solid rgba(#fff, .7);
+    padding: 25px 0; /*文字の配置場所の調整*/
+}
+}
+
+/* スマホで表示する場合のCSS */
+@media (max-width: 767px) {
+#PageTopBtn {
+    font-size: .7em;
+}
+#PageTopBtn a {
+    width: 70px;
+    height: 40px;
+    padding: 15px 0; /*文字の配置場所の調整*/
+}
+}
+//topに戻るボタンここまで
