@@ -97,12 +97,12 @@ div.right_img2 {
 }
 div.left_img3 {
     position: absolute;
-    width: 171px;
-    height: 415px;
-    top: 4800px;
-    left: -350px;
+    width: 1700px;
+    height: 500px;
+    top: 5085px;
+    left: -770px;
     background: url(../images/lavener_bg2.jpg) top center no-repeat;
-    z-index: 100;
+    z-index: 0;
 }
 
 
@@ -807,3 +807,97 @@ article.sns_contents2 {//facebook
 }
 
 //snsここまで
+//footerここから
+footer {
+    position: absolute;
+    top: 5500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 400px;
+    background: url(../images/footer_bg.jpg) center top repeat-x;
+    background-size: contain;
+}
+
+section.footer_contens {
+    display: flex;
+    width: 1024px;
+    margin: 55px auto 0 auto;
+    // background-color: red;
+}
+.e_left {
+    width: 140px;
+    height: 190px;
+    background-color: #fff;
+    margin-right: 100px;
+    background: url(../images/e.png) center top no-repeat;
+    background-size: cover;
+    -webkit-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.address {
+    width: 200px;
+    height: 190px;
+    background-color: #fff;
+    margin-right: 50px;
+    -webkit-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    font-size: .8rem;
+    text-align: center;
+    background-image: url(../images/lavender_illust.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 70%;
+    p {
+        width: 195px;
+        text-align: center;
+    }
+    span.address_tel {
+    display: block;
+    color: #bc72e8;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 800;
+    margin-top: 25px;
+    }
+}
+.map {
+    width: 200px;
+    height: 190px;
+    background-color: #fff;
+    margin-right: 100px;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    -webkit-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.e_right {
+    width: 140px;
+    height: 190px;
+    background-color: #fff;
+    background: url(../images/e02.png) center top no-repeat;
+    background-size: cover;
+    -webkit-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #6b8393;
+    color: rgba(#fff,.8);
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    line-height: 6rem;
+}
+//footerここまで
